@@ -1,23 +1,20 @@
-function View () {
-  this. field
+function View (){
 
 }
 
-View.prototype.drawCells = function () {
+View.prototype.showMessage = function ( textMessage ){
+  document.querySelector('.message').innerHTML = textMessage;
+};
 
-}
+View.prototype.displayHit = function ( location ) {
+  var cell = document.getElementById( location );
+  cell.classList.add('hit');
+};
 
+View.prototype.displayMiss = function ( location ){
+  var cell = document.getElementById( location );
+  cell.classList.add('miss');
+};
 
-View.prototype.showMits = function () {
+var view = new View();
 
-}
-
-
-View.prototype.showMiss = function () {
-
-}
-
-
-View.prototype.getXY = function () {
-
-}

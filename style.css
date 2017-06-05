@@ -1,10 +1,97 @@
-body{
-  background: lightblue;
+body {
+  margin: 0;
+  background: linear-gradient(to right, #302c77, #25b7c4);
 }
 
-.row div{
-  width: 30px;
-  height: 30px;
-  border: 1px solid #181818;
-  float: left;
+h2{
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  font-size: 80px;
+  text-shadow: 1px 1px 2px #0f6a70, 0 0 1em #302d77;
+  text-align: center;
+  margin-top: -10px;
 }
+
+td {
+  border: 1px solid #bdeae7;
+  height: 120px;
+  width: 120px;
+}
+
+.hit{
+  background: url("img/ship.png")no-repeat center center;
+}
+
+.miss{
+  background: url("img/cross.png")no-repeat center center;
+}
+
+.logo{
+  background: url('img/logo.png')no-repeat center;
+  height: 215px;
+}
+
+.animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button {
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #302e78;
+  text-decoration: none;
+}
+
+.blue {
+  background-color: #fdf258;
+  border-bottom: 5px solid #c1b843;
+}
+
+.action-button:active {
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+.content{
+  width: 500px;
+  margin: auto;
+  margin-top: 250px;
+}
+
+.button{
+  margin-left: 30%;
+  width: 50%;
+}
+
+table{
+  width: 900px;
+  margin: auto;
+  margin-top: 250px;
+}
+
+.message{
+  position: absolute;
+  z-index: 999;
+  top: 150px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+}
+
+.newGame{
+  display: none;
+}
+
+#new{
+  text-align: center;
+}
+
